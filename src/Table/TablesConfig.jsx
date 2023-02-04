@@ -41,9 +41,10 @@ function TablesConfig(props) {
         <>
             <div className="header">
                 <div className="Title">Table task</div>
-                <div className="typography">Page: {page}</div>
                 {
                     Boolean(columns.length) &&
+                    <>
+                    <div className="typography">Page: {page}</div>
                     <Pagination
                         className="pagination"
                         count={countPage}
@@ -52,6 +53,7 @@ function TablesConfig(props) {
                         page={page}
                         onChange={handleChangePage}
                     />
+                    </>
                 }
             </div>
             <div className="tableWrapper">
