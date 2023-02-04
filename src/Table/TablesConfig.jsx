@@ -1,10 +1,10 @@
-import React, {Fragment, useState} from "react";
+import React, {Fragment, useState} from "react"
 import "./tableStyle.css"
-import s from "../Modal/modal.module.css";
+import s from "../Modal/modal.module.css"
 import addImg from "../images/add.png"
 import deleteImg from "../images/minus-sign.png"
-import * as lodash from "lodash";
-import {Pagination} from "@mui/material";
+import * as lodash from "lodash"
+import {Pagination} from "@mui/material"
 
 function TablesConfig(props) {
     const [columns, setColumns] = useState(props.data.body)

@@ -1,4 +1,4 @@
-import TablesConfig from "./Table/TablesConfig";
+import TablesConfig from "./Table/TablesConfig"
 import data from "./data"
 
 function App() {
