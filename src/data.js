@@ -158,6 +158,6 @@ const data = {
                     {id:42, rowDataField:"data", rowCaption:"row_42", rowFormat: "format"}
                     ]
             }]
-
 }
+
 export default data

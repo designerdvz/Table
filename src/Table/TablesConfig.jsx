@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from "react"
+import React, {useState} from "react"
 import "./tableStyle.css"
 import s from "../Modal/modal.module.css"
 import addImg from "../images/add.png"
@@ -68,29 +68,28 @@ function TablesConfig(props) {
                             </div>
                             {col.items.filter(col => (col.id > ((page - 1) * 20) && (col.id < (page) * 20 + 1))).map((row) => {
                                 return (
-                                    <Fragment key={row.id}>
-                                        <div
-                                            onDoubleClick={() => {
-                                                setModalState({
-                                                    id: row.id,
-                                                    rowDataField: row.rowDataField,
-                                                    rowCaption: row.rowCaption,
-                                                    rowFormat: row.rowFormat
-                                                })
-                                                setOpen(true)
-                                            }}
-                                            className="row"
-                                        >
-                                            {row.rowCaption}
-                                        </div>
-                                    </Fragment>
+                                    <div
+                                        key={row.id}
+                                        onDoubleClick={() => {
+                                            setModalState({
+                                                id: row.id,
+                                                rowDataField: row.rowDataField,
+                                                rowCaption: row.rowCaption,
+                                                rowFormat: row.rowFormat
+                                            })
+                                            setOpen(true)
+                                        }}
+                                        className="row"
+                                    >
+                                        {row.rowCaption}
+                                    </div>
                                 )
                             })}
                         </div>
                     )
                 })}
                 <div className="addColumn" onClick={() => addColumn()}>
-                    Add new Column
+                    New column
                     <img className="addImg" src={addImg}/>
                 </div>
             </div>

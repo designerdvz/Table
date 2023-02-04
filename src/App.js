@@ -13,7 +13,7 @@ function App() {
     <div className="App">
         {valid && <TablesConfig data = {data}/>}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
