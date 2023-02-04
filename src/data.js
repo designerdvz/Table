@@ -5,7 +5,7 @@ const data = {
             {
                 id: 0,
                 columnDataField: "data",
-                columnCaption: "caption One",
+                columnCaption: "column One",
                 columnDataType: "dataType",
                 columnFormat: "format",
                 columnAlignment: "center",
@@ -57,7 +57,7 @@ const data = {
         {
                 id: 1,
                 columnDataField: "data",
-                columnCaption: "caption Two",
+                columnCaption: "column Two",
                 columnDataType: "dataType",
                 columnFormat: "format",
                 columnAlignment: "center",
@@ -109,7 +109,7 @@ const data = {
 {
                 id: 2,
                 columnDataField: "data",
-                columnCaption: "caption Three",
+                columnCaption: "column Three",
                 columnDataType: "dataType",
                 columnFormat: "format",
                 columnAlignment: "center",

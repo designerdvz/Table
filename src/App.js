@@ -1,6 +1,4 @@
-import './App.css';
-import Ajv from "ajv"
-import TablesConfig from "./TablesConfig";
+import TablesConfig from "./Table/TablesConfig";
 import data from "./data"
 
 function App() {
@@ -9,11 +7,11 @@ function App() {
     const ajv = new Ajv()
     const validate = ajv.compile(schema)
     const valid = validate(data)
-    if (!valid) console.log(validate.errors)
+    if (!valid) console.error(validate.errors)
 
     return (
     <div className="App">
-      <TablesConfig data = {data}/>
+        {valid && <TablesConfig data = {data}/>}
     </div>
   );
 }

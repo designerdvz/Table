@@ -1,32 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
 html {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
 }
+
 .Title{
     text-align: center;
+    font-weight: bold;
 }
-.pagination{
-    justify-content: center;
-    width: 100%;
-    margin-left: 40vw;
+
+.typography {
+    font-size: 16px;
+    margin: 6px 0;
 }
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6px 0;
+}
+
 .addColumn {
     margin-left: 10px;
     cursor: pointer;
     height: 20px;
 }
+
 .deleteImg {
     width: 10px;
     align-items: center;
   margin-right: 5px;
     cursor: pointer;
 }
+
 .addImg{
     width: 20px;
     align-items: center;
     transform: translateY(5px);
 }
+
 .tableWrapper {
     width: 80%;
     margin: 0 auto;
@@ -34,6 +48,7 @@ html {
     justify-content: center;
     align-items: stretch;
 }
+
 input {
     border: none;
     font-weight: bold;
@@ -41,9 +56,11 @@ input {
     cursor: pointer;
     outline: none;
 }
+
 .row, .column{
     border: 1px solid #000000;
     cursor: default;
     font-size: 15px;
+    text-align: center;
 }
 
