@@ -2,6 +2,7 @@ import './App.css';
 import Ajv from "ajv"
 import TablesConfig from "./TablesConfig";
 import data from "./data"
+
 function App() {
     const schema = require('./report-config.json')
     const Ajv = require("ajv")
